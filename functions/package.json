@@ -1,0 +1,30 @@
+{
+  "name": "spotiflybackend",
+  "description": "Firebase Cloud functions backend for the SpotifLy react frontend demo app",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "12"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^9.4.1",
+    "firebase-functions": "^3.11.0",
+    "spotify-web-api-node": "^5.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^7.14.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "firebase-functions-test": "^0.2.3"
+  },
+  "private": true,
+  "author": "b00stup",
+  "license": "MIT"
+}
